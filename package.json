@@ -1,0 +1,43 @@
+{
+  "name": "mi-angular-chat",
+  "version": "0.0.0",
+  "description": "Simple chat for Angular 1",
+  "author": {
+    "name": "MovingIMAGE24",
+    "url": "http://www.movingimage24.com/"
+  },
+  "contributors": [
+    {
+      "name": "Enrico Hoffmann",
+      "email": "enrico.hoffmann@movingimage.com"
+    }
+  ],
+  "main": "dist/mi-angular-chat.js",
+  "keywords": [
+    "angularjs",
+    "bootstrap",
+    "chat"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MovingImage24/mi-angular-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MovingImage24/mi-angular-chat/issues"
+  },
+  "homepage": "https://github.com/MovingImage24/mi-angular-chat#readme",
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "jscs": "^2.7.0",
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "webpack": "^1.12.9"
+  },
+  "scripts": {
+    "prebuild:js": "jscs ./src ./test",
+    "build": "npm run build:js && npm run build:js-min",
+    "build:js": "webpack --config webpack.config.js",
+    "build:js-min": "webpack --config webpack.min.config.js",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  }
+}
