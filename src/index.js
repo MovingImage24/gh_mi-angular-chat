@@ -4,8 +4,10 @@
  * @ngInject
  */
 
+require('ng-lodash');
+
 module.exports = angular
-  .module('mi.Chat', ['mi/template/chat.html'])
+  .module('mi.Chat', ['mi/template/chat.html', 'ngLodash'])
 
   // controller ////////////////////////////////////////////////////////////////////////////////////////////////////////
   .controller('MiChatController', ['$scope', '$timeout', function ($scope, $timeout) {
