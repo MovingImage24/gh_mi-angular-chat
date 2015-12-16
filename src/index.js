@@ -49,7 +49,7 @@ module.exports = angular
   }])
 
   // directive /////////////////////////////////////////////////////////////////////////////////////////////////////////
-  .directive('miChat', ['$timeout', 'lodash', function ($timeout, lodash) {
+  .directive('miChat', ['$timeout', 'lodash', function ($timeout, _) {
     return {
       restrict: 'EA',
       replace: true,
@@ -83,7 +83,7 @@ module.exports = angular
         scope.$chatInput = element[0].querySelector('.chat-input-field');
 
         var elWindow = scope.$msgContainer[0];
-        scope.$msgContainer.bind('scroll', lodash.throttle(function () {
+        scope.$msgContainer.bind('scroll', _.throttle(function () {
           var scrollHeight = elWindow.scrollHeight;
           if (elWindow.scrollTop <= 10) {
             scope.historyLoading = true;
