@@ -8,9 +8,9 @@ node_js:
 before_install: npm install -g npm@'>=2.13.5'
 deploy:
   provider: npm
-  email: dasrick@gmail.com
+  email: admin@movingimage24.com
   api_key:
-    secure: E6/WwWg0MuxjI+hbFamPjECH5IEB9ZYubliZkSTUK3OW4cHfQff43mJjfa0ta0GptUIgRHg/QxU+AW1EY/Vqnak6Mhw1VU1a3QXDmPIUy0tr8Ett8u1RRTqQ59UAOXI34Ze2wxbxBaAyIhxmrUtOsEb5rN7lO4L71Ax7MplNX5Kkpv7iA5KuIr9sYnsgwUEXLG9zHcQMyOSO+ELesNplwGCHpQYzS1/MdVFRZN5qq3XWTrss26W2NsIqC0y/BiQQHgvzbyAb4IaOemLpajfMJSLbdDqRFnp9xYXytnHqSNEsaK2tWKAyZZAj+KdyO1o7tZcoytG5C194RatoUC0eHJGiHFmZRnsB7tyxMMhUl4nszVM1r/DnXIZ7G24+wHmq0AyosBg7fYtMLOVi8JjJK8YzYLpdbUeG6XVH4AIZkkEzRklOWF3QijLcKhtKJZB2wfWBWGhS/Hmy+9GvM7H9JEfJSX7zpQZ81mCXuI8TSaXhUOHv5MNaRcma4gHjOz2yw7lPvrC2tnDWlHmfV1F85IR/6m+C8JTtn2lFsrhfReR5v9y5nSwOROvmYzjpphj978f3e76LyyiIj7Fk2/irp0J1yUBq+C/0fzqPtJYjljgJCSqWJKeJE93hObwS6//No+2n1pq3T7vZON6tfndhZ5NPRcC2UJ5cT4UzpYlgBGY=
+    secure: $NPM_TOKEN
   on:
     tags: true
     repo: MovingImage24/mi-angular-chat
