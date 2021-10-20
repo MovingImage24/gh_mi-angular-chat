@@ -1,3 +1,7 @@
+### This repository is deprecated!
+
+### The relevant repository can be found here [mi-angular-chat](https://github.com/movingimage-evp/mi-angular-chat)
+
 # Angular Chat
 
 [![GitHub version](https://badge.fury.io/gh/movingimage24%2Fmi-angular-chat.svg)](http://badge.fury.io/gh/movingimage24%2Fmi-angular-chat)
